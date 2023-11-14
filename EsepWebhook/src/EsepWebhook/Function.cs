@@ -20,8 +20,7 @@ public class Function
     {
         dynamic json = JsonConvert.DeserializeObject<dynamic>(input.ToString());
         
-        string payload = $"{{'text':'Issue Created: {https://evrqmt8jg5.execute-api.us-east-2.amazonaws.com/default/EsepWebhook}'}}";
-        
+        string payload = $"{{'text':'Issue Created: {https://evrqmt8jg5.execute-api.us-east-2.amazonaws.com/default/EsepWebhook
         var client = new HttpClient();
         var webRequest = new HttpRequestMessage(HttpMethod.Post, Environment.GetEnvironmentVariable("SLACK_URL"))
         {
